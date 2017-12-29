@@ -20,7 +20,7 @@ public class Baidu {
 	    WebElement element_submit = driver.findElement(By.id("su"));
 	    element_submit.click();
 	    
-	    WebElement element_set = driver.findElement(By.linkText("����"));
+	    WebElement element_set = driver.findElement(By.linkText("设置"));
 	    element_set.click();
 	}
 

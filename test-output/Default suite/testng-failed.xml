@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <listeners>
+    <listener class-name="runner.ExtentReporterNgListener"/>
+  </listeners>
+  <test name="SolutionSelenium(failed)">
+    <classes>
+      <class name="cases.SearchTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cases.SearchTest -->
+      <class name="cases.LoginMafengwoTests">
+        <methods>
+          <include name="loginTestCase" invocation-numbers="1 2 3 4"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- cases.LoginMafengwoTests -->
+    </classes>
+  </test> <!-- SolutionSelenium(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

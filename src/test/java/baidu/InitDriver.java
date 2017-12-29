@@ -1,4 +1,5 @@
 /*
+ * 多浏览器启动类
  * author：miyar chen
  */
 package baidu;
@@ -18,7 +19,7 @@ public class InitDriver {
 	private String chromePath="C:\\Program Files (x86)\\Google\\Chrome\\Application\\chromedriver.exe";
 	private String iePath="C:\\Program Files (x86)\\Internet Explorer\\IEDriverServer.exe";
 	private String url;
-	
+/*	
 	public InitDriver(){
 		
 	}
@@ -30,13 +31,14 @@ public class InitDriver {
 		this.url=url;
 		startExplorer(this.driver,this.driverName,this.url);
 	}
-	
+*/	
 	/*
 	 * 启动Firefox浏览器
 	 */
+	//public static WebDriver startFirefox(WebDriver driver,String path){
 	public WebDriver startFirefox(WebDriver driver,String path){
 		
-		System.setProperty("webdriver.firefox.bin", path);
+		System.setProperty("webdriver.firefox.bin", path);//设置浏览器驱动的路劲
 		driver = new FirefoxDriver();      
 		return driver;
     }

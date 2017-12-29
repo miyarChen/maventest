@@ -15,12 +15,13 @@ import org.openqa.selenium.WebElement;
 
 import baidu.InitDriver;
 //import baidu.Baidu;
-
+import baidu.BaiduLaunchFrame;
+import operate.ReadCSV;
 public class BaiduMain extends JFrame{
 	
 	/**
 	 * 
-	 */
+	 *//*
 	private static final long serialVersionUID = 1L;
 
 	public void launchFrame(){
@@ -38,6 +39,7 @@ public class BaiduMain extends JFrame{
 		panel.add(submit);
 		getContentPane().add(panel);
 	}
+	*/
 	
 	public static void main(String args[]) {
 		WebDriver driver = null;
@@ -47,7 +49,7 @@ public class BaiduMain extends JFrame{
 		//String driverName="IE";
 		String driverName;
 		
-		new BaiduMain().launchFrame();
+		//new BaiduMain().launchFrame();
 		
 		System.out.println("可选择的浏览器：Firefox Chrome IE");
 		System.out.print("请输入浏览器名称:");
@@ -72,5 +74,9 @@ public class BaiduMain extends JFrame{
 	    
 	    initDriver.closeExplorer(driver);
 	    System.out.println("success!");
+	    System.out.println("******************");
+	    
+	    String filePath="F:/autotest/maventest/src/test/resources/test.csv";
+	    ReadCSV.readCSVFile(filePath);
 	}
 }

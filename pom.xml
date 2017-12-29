@@ -4,5 +4,34 @@
   <artifactId>maventest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <dependencies>
+  
+	<dependency>
+  		<groupId>com.relevantcodes</groupId>
+  		<artifactId>extentreports</artifactId>
+  		<version>2.41.2</version>
+	</dependency>
+	
+	<!-- <dependency>
+         <groupId>org.testng</groupId>
+         <artifactId>testng</artifactId>
+         <version>6.8.7</version>
+         <scope>test</scope>
+    </dependency> -->
+    
+    <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>3.8.1</version>
+         <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+		<groupId>net.sourceforge.javacsv</groupId>
+		<artifactId>javacsv</artifactId>
+		<version>2.0</version>
+	</dependency>
+
+ </dependencies>
  
 </project>

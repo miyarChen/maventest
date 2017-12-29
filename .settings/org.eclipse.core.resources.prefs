@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
-encoding//src/test/java=UTF-8
 encoding//src/test/java/baidu/BaiduMain.java=UTF-8
 encoding//src/test/java/baidu/InitDriver.java=UTF-8
+encoding//src/test/java/cases/LoginMafengwoTests.java=UTF-8
+encoding//src/test/java/operate/ReadCSV.java=UTF-8
+encoding//src/test/java/pageobject/LoginPage.java=UTF-8
+encoding//src/test/java/runner/ExtentReporterNgListener.java=UTF-8

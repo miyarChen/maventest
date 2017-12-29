@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="SolutionSelenium">
+        <classes>
+            <class name="cases.LoginMafengwoTests">
+                <!--  <methods> -->
+                      <!-- 添加指定的测试 -->
+                   <!--  <include name="testLoginByCsv"/>
+                      <include name="testLoginByCsv2"/>
+                      <include name="testLoginByCsv3"/>
+                </methods>-->
+            </class> <!-- cases.LoginTests -->
+            <class name="cases.AdminTests">
+                <methods>
+                      <!-- 去除指定的测试 -->
+                    <exclude name="testAddMember"/>
+                </methods>
+            </class>
+            <class name="cases.SearchTest">
+            </class>
+        </classes>
+        
+    </test> <!-- SolutionSelenium -->
+    
+    <listeners>
+  		<listener class-name="runner.ExtentReporterNgListener"/>
+	</listeners>
+</suite> <!-- Default Suite -->
+
